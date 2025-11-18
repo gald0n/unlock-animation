@@ -1,0 +1,39 @@
+body {
+            margin: 0;
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Contenedor principal y contenido a mostrar después del desbloqueo */
+        #main-content {
+            display: none; /* Oculto inicialmente */
+            width: 100vw;
+            height: 100vh;
+            background: #fff;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+        /* Animación de Desbloqueo (Overlay) */
+        #unlock-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            /* Degradado de luz para el efecto de transición */
+            background: linear-gradient(90deg, #111 0%, #000 50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #fff;
+            cursor: pointer; /* Indica que es interactivo */
+            /* Transiciones para la animación */
+            transition: opacity 0.4s ease, transform 0.4s ease; 
+        }
