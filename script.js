@@ -45,3 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 unlock.style.transform = 'translateX(0)';
                 unlock.style.opacity = '1';
             }
+        });
+});
